@@ -3,7 +3,7 @@
 from selenium import webdriver
  
 url = 'https://www.youtube.com/channel/UCi33DX7KG3M3bI0ipjOP2Eg'
-browser = webdriver.Chrome()
+browser = webdriver.Chrome("C:/ChromeDriver/chromedriver.exe")
 browser.get(url)
 
 browser.find_element_by_xpath('//*[@id="thumbnail"]').click()
